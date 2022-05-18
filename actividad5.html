@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+* {
+    background-color:#fff;
+  }
+  
+  .galeria {
+    height: 350px;
+    width: 260px;
+    margin:1em auto;
+    position: relative;   
+    border: solid 3px red;
+
+  }
+  
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2.5s;
+
+  }
+
+  .galeria p{
+
+    opacity: 0;
+    transition: 3s;
+  }
+  
+  .galeria input[type=radio] {
+    position: relative;
+    top: 320px;
+    margin-left: 5%;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(1):checked  ~   img:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+
+
+
+/*     txto    */
+
+  .galeria input[type=radio]:nth-of-type(1):checked ~ p:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(2):checked ~ p:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(3):checked ~ p:nth-of-type(3) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(4):checked ~ p:nth-of-type(4) {
+    opacity: 1;
+  }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/galeria.css" />
+</head>
+<body>
+    <div class="galeria">
+        <input type="radio" name="navegacion" id="_1" checked>
+        <input type="radio" name="navegacion" id="_2">
+        <input type="radio" name="navegacion" id="_3">
+        <input type="radio" name="navegacion" id="_4"> 
+        <img src="imagen1.jpg" width="260" height="300" alt="Galeria CSS 1" />
+        <p>img 1</p>
+        <img src="imagen2.jpg" width="260" height="300" alt="Galeria CSS 2"  />
+        <p>img 2</p>
+
+        <img src="imagen3.jpg" width="260" height="300" alt="Galeria CSS 3" />
+
+        <p>img  3</p>
+        <img src="imagen4.jpg" width="260" height="300" alt="Galeria CSS 4" />
+        <p>img 4</p>
+
+      </div>
+      
+      <p> <a href="https:/
+</body>
+</html>
